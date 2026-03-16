@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Velocity Tester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div id="app" class="w-full max-w-2xl">
+        
+        <div id="quiz-screen" class="glass-card p-8 rounded-2xl relative shadow-2xl">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <span id="question-count" class="text-sm font-semibold text-slate-400 block mb-1 text-xs uppercase tracking-widest">Awaiting Data...</span>
+                    <span id="timer" class="text-2xl font-mono font-bold text-blue-400">00:00</span>
+                </div>
+                <div class="live-score-box p-3 rounded-xl text-center min-w-[110px]">
+                    <div class="text-[10px] text-blue-400 uppercase font-bold tracking-tighter mb-1">Live Index</div>
+                    <div id="live-score" class="text-3xl font-black text-white">0.0</div>
+                </div>
+            </div>
+
+            <div class="w-full bg-slate-800 h-1.5 rounded-full mb-8 overflow-hidden">
+                <div id="progress-bar" class="bg-blue-500 h-full w-0 shadow-[0_0_10px_#3b82f6]"></div>
+            </div>
+
+            <div id="question-container">
+                <h2 id="question-text" class="text-xl font-medium mb-8 leading-relaxed min-h-[3.5rem]">Initializing Assessment...</h2>
+                <div id="options-grid" class="grid grid-cols-1 gap-3"></div>
+            </div>
+
+            <div class="mt-8 flex justify-between items-center opacity-30">
+                <p class="text-[10px] uppercase tracking-[0.2em] font-bold">Rapid Fire Protocol</p>
+                <p class="text-[10px] uppercase tracking-[0.2em] font-bold">Reload to Reset</p>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden glass-card p-10 rounded-2xl text-center shadow-2xl">
+            <h2 class="text-3xl font-bold mb-2">Analysis Concluded</h2>
+            <div class="my-10">
+                <div class="text-8xl font-black text-blue-400 mb-2 drop-shadow-lg" id="final-score">0.0</div>
+                <p class="text-slate-400 uppercase tracking-[0.3em] text-sm">Performance Quotient</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="bg-slate-800/40 p-5 rounded-xl border border-slate-700">
+                    <div class="text-3xl font-bold text-green-400" id="correct-count">0</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Validated</div>
+                </div>
+                <div class="bg-slate-800/40 p-5 rounded-xl border border-slate-700">
+                    <div class="text-3xl font-bold" id="avg-time">0s</div>
+                    <div class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Mean Latency</div>
+                </div>
+            </div>
+            <button onclick="location.reload()" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transition-all w-full uppercase tracking-widest text-sm shadow-lg shadow-blue-900/40">
+                Re-initialize Sequence
+            </button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

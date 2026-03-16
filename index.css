@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  overflow: hidden;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.option-btn {
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-btn:active {
+  transform: scale(0.98);
+}
+
+.option-btn.selected {
+  background: #3b82f6 !important;
+  border-color: #60a5fa !important;
+  color: white;
+}
+
+#progress-bar {
+  transition: width 0.3s ease;
+}
+
+.live-score-box {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}

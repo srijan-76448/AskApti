@@ -1,0 +1,29 @@
+{
+    "questions": [
+        {
+            "question": "If a car travels 120km in 2 hours, what is its average speed in m/s?",
+            "options": ["16.67 m/s", "33.33 m/s", "60 m/s", "15 m/s"],
+            "answer": "16.67 m/s"
+        },
+        {
+            "question": "Which number comes next in the sequence: 2, 6, 12, 20, 30, ...?",
+            "options": ["38", "40", "42", "44"],
+            "answer": "42"
+        },
+        {
+            "question": "A clock shows 3:15. What is the angle between the hour and minute hand?",
+            "options": ["0°", "7.5°", "15°", "37.5°"],
+            "answer": "7.5°"
+        },
+        {
+            "question": "If 5 machines take 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+            "options": ["1 minute", "5 minutes", "100 minutes", "20 minutes"],
+            "answer": "5 minutes"
+        },
+        {
+            "question": "Find the odd one out: 27, 64, 125, 144, 216",
+            "options": ["27", "64", "144", "216"],
+            "answer": "144"
+        }
+    ]
+}
